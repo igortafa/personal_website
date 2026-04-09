@@ -45,7 +45,7 @@ burguer.onclick = e =>{
 const projectsObj = {
     tControl:{link:' https://controle-treinamentos-58a7c.web.app', git:'https://github.com/igortafa/rh-anchor'},
     landingDev:{link:'https://igortafa.com.br', git:'https://github.com/igortafa/personal_website.git'},
-    academicSite:{link:'https://douglasaparecidobueno-d411a.web.app/', git:'https://github.com/igortafa/academic-website.git'}, 
+    academicSite:{link:' https://academic-website-5b4d4.web.app', git:'https://github.com/igortafa/academic-website.git'}, 
     weddingInvite:{link:'https://wedding-invitation-2fe5d.web.app/', git:'https://github.com/igortafa/wedding-invitation.git'}
 }
 
@@ -90,13 +90,19 @@ projects.forEach(project =>{
     const mainLink = projectsObj[`${project.getAttribute('id')}`].link
 
 
-    gitButton.onclick = e=>{
+    if(gitButton){
+           gitButton.onclick = e=>{
         openLink(gitLink)
     }
-       viewButton.onclick = e=>{
+    }
+
+    if(viewButton){
+        viewButton.onclick = e=>{
         console.log(mainLink)
         openLink(mainLink)
     }
+    }
+       
 
     
 })
