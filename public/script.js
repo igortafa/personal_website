@@ -1,3 +1,4 @@
+
 const cursor = document.querySelector('.cursor')
 const nav  = document.querySelector('nav').querySelectorAll('li')
 const feedItens = document.querySelector('.feed').querySelectorAll('.feedItem')
@@ -8,9 +9,6 @@ const phoneMenu = document.querySelector('.phoneMenu')
 const phoneOptions = phoneMenu.querySelectorAll('li')
 const lines = burguer.querySelectorAll('div')
 const actionButton = document.querySelector('.actionButton').querySelector('button')
-
-
-
 
 
 
@@ -45,10 +43,10 @@ burguer.onclick = e =>{
 }
 
 const projectsObj = {
-    tControl:{link:'', git:'https://github.com/igortafa/rh-anchor'},
-    landingDev:{link:'', git:'https://github.com/'},
-    academicSite:{link:'https://douglasaparecidobueno-d411a.web.app/', git:'https://github.com/'}, 
-    weddingInvite:{link:'', git:'https://github.com/'}
+    tControl:{link:' https://controle-treinamentos-58a7c.web.app', git:'https://github.com/igortafa/rh-anchor'},
+    landingDev:{link:'https://igortafa.com.br', git:'https://github.com/igortafa/personal_website.git'},
+    academicSite:{link:'https://douglasaparecidobueno-d411a.web.app/', git:'https://github.com/igortafa/academic-website.git'}, 
+    weddingInvite:{link:'https://wedding-invitation-2fe5d.web.app/', git:'https://github.com/igortafa/wedding-invitation.git'}
 }
 
 
@@ -96,6 +94,7 @@ projects.forEach(project =>{
         openLink(gitLink)
     }
        viewButton.onclick = e=>{
+        console.log(mainLink)
         openLink(mainLink)
     }
 
